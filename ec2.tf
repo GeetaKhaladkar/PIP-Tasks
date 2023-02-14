@@ -56,7 +56,7 @@ resource "aws_instance" "EC2-private" {
   security_groups = [aws_security_group.SG_Devops.id]
   subnet_id       = aws_subnet.prisub.id
   key_name        = var.aws_key
-  #volume_size     = "8 GiB"
+  volume_size     = 8 
   tags = {
     "Name" = "EC2-private"
   }
